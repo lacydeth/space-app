@@ -1,0 +1,73 @@
+.desktop {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    >div {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.5);
+        max-width: 800px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            height: 60px;
+            text-decoration: none;
+            text-transform: uppercase;
+            strong {
+                padding-right: 5px;
+            }
+        }
+        a:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+}
+.hamburger {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    margin-top: 20px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger::after {
+    content: "";
+    width: 50px;
+    height: 7px;
+    background: black;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: 0 15px 0 black, 0 30px 0 black;
+}
+.mobile {
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: 80vh;
+        gap: 10vh;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            text-decoration: none;
+            text-transform: uppercase;
+            strong {
+                padding-right: 5px;
+            }
+        }
+        a:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+}
